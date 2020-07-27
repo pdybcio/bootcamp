@@ -1,13 +1,16 @@
 package com.company;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     static int arrayLength;
     static int[] arrayOfNumbers;
     static int minRange;
     static int maxRange;
+
     public static void main(String[] args) {
         System.out.println("Podaj liczbe elementow tablicy: ");
         arrayLength = scanner.nextInt();
@@ -32,12 +35,14 @@ public class Main {
         System.out.print("Numery parzyste to : \n");
         showEvenNumbers();
     }
+
     private static void showNumbers() {
         for (int i = 0; i < arrayLength; i++) {
             arrayOfNumbers[i] = scanner.nextInt();
         }
         System.out.println(Arrays.toString(arrayOfNumbers));
     }
+
     private static void randomNumbersWithinSpecificRange(int x, int y) {
         while (true) {
             if (x >= y) {
@@ -55,6 +60,7 @@ public class Main {
             }
         }
     }
+
     private static void showEvenNumbers() {
         for (int i = 0; i < arrayLength; i++) {
             if (arrayOfNumbers[i] % 2 == 0) {
