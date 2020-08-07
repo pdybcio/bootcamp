@@ -26,6 +26,7 @@ public class Main {
 
         persons.add(teacher0 = new Teacher("Zbyszek", "Stonoga", 48, "magister", "polityka", 4302.22));
         persons.add(student0 = new Student("Lukasz", "Szumowski", "chemia", 5));
+        persons.add(teacher1 = new Teacher("Nauczyciel", "Jakis", 48, "mgr", "filologia angielska", 3000));
         persons.add(student1 = new Student("B", "B", "chemia", 4));
         persons.add(teacher2 = new Teacher("C", "C", 2, "mgr", "C", 4100));
         persons.add(student2 = new Student("D", "D", "chemia", 4));
