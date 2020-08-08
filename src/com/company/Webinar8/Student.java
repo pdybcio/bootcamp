@@ -3,12 +3,18 @@ package com.company.Webinar8;
 public class Student extends Person {
     private String fieldOfStudy;
     private int semester;
-    final static int age = 30;
+    private final static int MAX_AGE = 30;
 
-    public Student(String firstName, String lastName, String fieldOfStudy, int semester) {
-        super(firstName, lastName, age);
+    public Student(String firstName, String lastName, int age, String fieldOfStudy, int semester) {
+        super(firstName, lastName, checkIfStudentIsNotTooOld(age));
         this.fieldOfStudy = fieldOfStudy;
         this.semester = semester;
+    }
+
+    private static int checkIfStudentIsNotTooOld(int age) {
+        if (MAX_AGE < age) {
+            throw new ArithmeticException("Jesteś za stary na studenta!");
+        } else return age;
     }
 
     private int calculateYearOfSemester() {
