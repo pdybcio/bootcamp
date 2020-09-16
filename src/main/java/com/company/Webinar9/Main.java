@@ -1,9 +1,9 @@
 package com.company.Webinar9;
 
-import com.company.lesson9.students.Student;
-import com.company.lesson9.students.StudentsGenerator;
-import com.company.lesson9.teachers.Teacher;
-import com.company.lesson9.teachers.TeachersGenerator;
+import com.company.Webinar9.students.Student;
+import com.company.Webinar9.students.StudentsGenerator;
+import com.company.Webinar9.teachers.Teacher;
+import com.company.Webinar9.teachers.TeachersGenerator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Person> persons = new ArrayList<>(10);
+        List<com.company.Webinar9.Person> persons = new ArrayList<>(10);
         List<Student> students = new StudentsGenerator().getStudents();
         List<Teacher> teachers = new TeachersGenerator().getTeachers();
 
