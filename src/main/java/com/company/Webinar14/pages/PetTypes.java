@@ -21,7 +21,6 @@ public class PetTypes {
     public void checkBackgroundColor() {
         DriverManager.getWebDriver().get("http://petclinic.akademia.testowanie.pl/petclinic/pettypes");
         for (WebElement we: petTypeList) {
-            System.out.println("+ " + we.toString());
             String bgc = we.getCssValue("background-color");
             String backgroundColor = Color.fromString(bgc).asHex();
 
